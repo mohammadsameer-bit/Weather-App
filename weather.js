@@ -6,6 +6,9 @@ let winddegree = document.getElementById("winddegree");
 let humid = document.getElementById("humid");
 let visible = document.getElementById("visible");
 let pressure = document.getElementById("pressur");
+let error =document.createElement('h1')
+
+
 document.getElementById('subbtn').addEventListener('click',(e)=>{
 e.preventDefault();
    let fetchData=()=>{
@@ -21,6 +24,10 @@ e.preventDefault();
         pressure.innerText = data.main.pressure;   
         console.log(data); 
        })
+       .catch((error)=>{
+        console.log('result not found');
+       })
+       .finally(()=>console.log('All good'))
 
     }
     fetchData();
