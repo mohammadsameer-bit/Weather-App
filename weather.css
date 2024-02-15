@@ -94,16 +94,12 @@ body {
     justify-content: space-evenly;
 }
 .cityname {
-  /* position: relative;
-    left: 20px; */
   height: 120px;
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
-  
 }
 .fa-city {
   font-size: 40px;
@@ -179,4 +175,67 @@ body {
   position: absolute;
   left: 0%;
   top: 0%;
+}
+
+@media screen and (max-width: 412px) {
+  .container{
+    height: 915px;
+    width: 412px;
+  }
+  .search{
+    height: 60px;
+    width: 150px;
+    justify-content: space-around;
+  }
+  .search img{
+    width: 150px;
+  }
+ .search input{
+  width: 130px;
+  height: 20px;
+  font-size: 13px;
+ }
+ #subbtn {
+  height: 20px;
+  width: 50px;
+  font-size: 9px;
+}
+ .search input::placeholder {
+  font-size: 11px;
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.datacard {
+  background-color: rgba(255, 247, 247, 0.4);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgb(103, 101, 101); 
+  /* border: 5px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90% ;
+  height: 38vh;
+}
+.citycountname{
+  font-size: 13px;
+}
+.temptext{
+  font-size: 13px;
+}
+.windtext{
+  font-size: 13px;
+}
+.humidtext{
+  font-size: 13px;
+}
+.visibtext{
+  font-size: 13px;
+}
+.presstext{
+  font-size: 13px;
+}
+.datacard h3{
+  font-size: 13px;
+}
 }
