@@ -6,7 +6,9 @@ let winddegree = document.getElementById("winddegree");
 let humid = document.getElementById("humid");
 let visible = document.getElementById("visible");
 let pressure = document.getElementById("pressur");
-let error =document.createElement('h1')
+    // let errorocc =document.createElement('h1');
+    // let datacard = document.querySelector(".datacard");
+    // datacard.append(error);
 
 
 document.getElementById('subbtn').addEventListener('click',(e)=>{
@@ -25,6 +27,9 @@ e.preventDefault();
         console.log(data); 
        })
        .catch((error)=>{
+        // let errorocc =document.createElement('h1');
+        // errorocc = error;
+        // errorocc.innerHTML = "you entered wrong city";
         console.log('result not found');
        })
        .finally(()=>console.log('All good'))
